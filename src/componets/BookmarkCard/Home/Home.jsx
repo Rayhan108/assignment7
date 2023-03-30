@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Blog from '../../Blog/Blog';
 import "./Home.css"
 
 const Home = () => {
@@ -7,16 +8,23 @@ const Home = () => {
     useEffect(()=>{
         fetch('fakedata.json').then(res=>res.json()).then(data=>setBlogs(data));
     },[])
-    console.log(blogs)
+    // console.log(blogs)
     return (
+        <>
         <div className='home-container'>
             <div className="blogs-container">
-<h2>blog coming here</h2>
+
+{
+    blogs.map(blog=><Blog key={blog.id} blog={blog}></Blog>)
+}
             </div>
             <div className="bookmark-container">
                 <h2>Bookmark list</h2>
             </div>
         </div>
+     
+        </>
+
     );
 };
 

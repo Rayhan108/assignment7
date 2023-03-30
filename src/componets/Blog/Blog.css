@@ -1,0 +1,25 @@
+.blog-container img{
+    width: 645px;
+height: 250px;
+}
+.blog-container{
+    width: 845px;
+height: 821px;
+}
+.author-section{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 210px;
+}
+.author{
+    display: flex;
+}
+.date{
+    margin-left: 5px;
+}
+.writter img{
+    width: 40px;
+    height: 40px;
+   clip-path: circle();
+}
