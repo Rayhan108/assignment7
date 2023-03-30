@@ -3,8 +3,8 @@ import "./Header.css"
 const Header = () => {
     return (
         <>
-      <nav className="header">
-      <h2>Knowledge</h2>
+      <nav className="header container">
+      <h2>Knowledge Hunt</h2>
       <div className='nav-link'>
         <a href="/home">Home</a>
         <a href="/about">About</a>
