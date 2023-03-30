@@ -14,10 +14,15 @@ const Blog = (props) => {
                     <img src={author_img} alt="" />
                     </div>
                 <div className='date'>
+                    <h5>{authorName}</h5>
                     <p>{published_date}</p>
                 </div>
             </div>
                 <p>{TimeNeedForWatch} min read <FontAwesomeIcon icon={faBookmark} /></p>
+           </div>
+           <h3>{blog_title}</h3>
+           <div className="mark-read">
+            <a href="">Mark as read</a>
            </div>
             </div>
        

@@ -7,3 +7,8 @@
     padding-right: 150px;
     margin:0 auto;
 }
+.blogs-container{
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
+}
