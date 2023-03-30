@@ -1,0 +1,14 @@
+.bookmark-container{
+    width: 350px;
+height: 1352px;
+
+background-color: rgba(17, 17, 17, 0.05);
+border-radius: 8px;
+}
+.bookmark{
+    padding: 10px;
+    margin: 0 auto;
+}
+.bookmark-list{
+    margin-top: 5px;
+}

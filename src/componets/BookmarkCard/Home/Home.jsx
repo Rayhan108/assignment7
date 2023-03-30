@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../../Blog/Blog';
+import BookmarkCard from '../BookmarkCard';
 import "./Home.css"
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
 }
             </div>
             <div className="bookmark-container">
-                <h2>Bookmark list</h2>
+                <BookmarkCard></BookmarkCard>
             </div>
         </div>
      

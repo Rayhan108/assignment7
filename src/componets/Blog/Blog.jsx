@@ -3,7 +3,7 @@ import "./Blog.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Blog = (props) => {
-    console.log(props.blog)
+    // console.log(props.blog)
     const {authorName,TimeNeedForWatch,blog_title,cover_img,author_img,published_date} =props.blog;
     return (
         <div className='blog-container'>
