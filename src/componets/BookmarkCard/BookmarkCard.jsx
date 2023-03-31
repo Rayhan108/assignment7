@@ -18,7 +18,7 @@ const BookmarkCard = ({spentTime,bookmark}) => {
     return (
         <div className='bookmark-container'>
          <div className="bookmark">
-         <h4>Spent time on read : {time}</h4>
+         <h4>Spent time on read : {time} min</h4>
             <div className="bookmark-list">
                 <h4>Bookmarked Blogs :{bookmark.length}</h4>
         

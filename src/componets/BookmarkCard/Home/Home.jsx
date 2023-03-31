@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Blog from '../../Blog/Blog';
 import BookmarkCard from '../BookmarkCard';
 import "./Home.css"
+import { ToastContainer, toast } from 'react-toastify';
 
 const Home = ({spentTime,handleSpentTime}) => {
     const [blogs,setBlogs]=useState([])
@@ -9,17 +10,24 @@ const Home = ({spentTime,handleSpentTime}) => {
 
     const handleBookmark=(blog)=>{
      const newbookmark=[...bookmark,blog]
-     setBookmark(newbookmark)
-//    console.log(newbookmark)
+     if(newbookmark){
+       
+      
+                 setBookmark(newbookmark)
+             }else{
+                toast("Wow so easy!")
+                setBookmark(newbookmark)
+             }
+
    
           }  
-        //   console.log(bookmark)
+    
 
     useEffect(()=>{
-        fetch('fakedata.json').then(res=>res.json()).then(data=>setBlogs(data));
+        fetch('fakedata.json')
+        .then(res=>res.json())
+        .then(data=>setBlogs(data));
     },[])
-    // console.log(blogs)
-    // console.log(handleSpentTime)
     return (
         <>
         <div className='home-container'>

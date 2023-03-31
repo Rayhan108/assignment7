@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './componets/Header/Header';
 import Home from './componets/BookmarkCard/Home/Home';
 import QuesAns from './componets/QuesAns/QuesAns';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -29,6 +31,7 @@ const App = () => {
 <Header></Header>
 <Home spentTime={spentTime} handleSpentTime={handleSpentTime} ></Home>
 <QuesAns></QuesAns>
+<ToastContainer></ToastContainer>
 
     </div>
   );
