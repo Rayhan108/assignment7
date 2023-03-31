@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import "./BookmarkCard.css"
+import BookmarkTitle from '../BookmarkTitle/BookmarkTitle';
 
-const BookmarkCard = ({spentTime}) => {
+const BookmarkCard = ({spentTime,bookmark}) => {
+    // console.log(bookmark)
     const [time,setTime]=useState("spentTime")
     useEffect(()=>{
         const getSpentTimeFromLocalStorage=JSON.parse(localStorage.getItem("spent-time"));
@@ -12,13 +14,19 @@ const BookmarkCard = ({spentTime}) => {
           setTime(0)
         }
     },[spentTime])
-    
+    // console.log(bookmark)
     return (
         <div className='bookmark-container'>
          <div className="bookmark">
          <h4>Spent time on read : {time}</h4>
             <div className="bookmark-list">
-                <h4>Bookmarked Blogs :</h4>
+                <h4>Bookmarked Blogs :{bookmark.length}</h4>
+        
+           
+              {
+                bookmark.map(bmark=><BookmarkTitle bmark={bmark} key={bmark.id}></BookmarkTitle>)
+              }
+              
             </div>
          </div>
         </div>

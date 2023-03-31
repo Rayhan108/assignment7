@@ -8,6 +8,7 @@ import Home from './componets/BookmarkCard/Home/Home';
 const App = () => {
   const [spentTime,setSpentTime]=useState("");
 
+
   const handleSpentTime=(time)=>{
     const priveousTime =JSON.parse(localStorage.getItem("spent-time"));
         if(priveousTime){
@@ -20,11 +21,12 @@ const App = () => {
         }
     
       }
-   console.log(spentTime)  
+  //  console.log(spentTime)
+
   return (
     <div>
 <Header></Header>
-<Home spentTime={spentTime} handleSpentTime={handleSpentTime}></Home>
+<Home spentTime={spentTime} handleSpentTime={handleSpentTime} ></Home>
 
     </div>
   );

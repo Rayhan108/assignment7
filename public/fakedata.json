@@ -1,6 +1,6 @@
 [
     {
-      "id": 3001,
+      "id": 1,
       "authorName": "Mr. Raju",
       "TimeNeedForWatch": 5,
       "blog_title": "How to get your first job as a self-taught programmer",
@@ -10,7 +10,7 @@
       "published_date":"02/03/2023"
     },
     {
-      "id": 3002,
+      "id": 2,
       "authorName": "Mrs. Setara",
       "TimeNeedForWatch": 7,
       "blog_title": "addEventListener vs HTML Event Handlers and appendChild vs append",
@@ -20,7 +20,7 @@
       "published_date":"02/03/2023"
     },
     {
-      "id": 3003,
+      "id": 3,
       "authorName": "Mr. Rayhan",
       "TimeNeedForWatch": 9,
       "blog_title": "Understanding JavaScript Mouse Events By Examples",
@@ -30,7 +30,7 @@
       "published_date":"02/03/2023"
     },
     {
-      "id": 3004,
+      "id": 4,
       "authorName": "Mr. Safiq",
       "TimeNeedForWatch": 15,
       "blog_title": "Accessing parentNode, childNode, siblings, appendChild",
