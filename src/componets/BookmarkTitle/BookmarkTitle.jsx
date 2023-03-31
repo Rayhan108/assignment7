@@ -1,9 +1,10 @@
 import React from 'react';
+import "./BookmarkTitle.css"
 
 const BookmarkTitle = ({bmark}) => {
     return (
-        <div>
-            <h2>{bmark.blog_title}</h2>
+        <div className='bookmark-title'>
+            <p>{bmark.blog_title}</p>
         </div>
     );
 };
