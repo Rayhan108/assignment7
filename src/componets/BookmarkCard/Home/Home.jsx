@@ -9,18 +9,29 @@ const Home = ({spentTime,handleSpentTime}) => {
     const [bookmark,setBookmark]=useState([])
 
     const handleBookmark=(blog)=>{
+    
      const newbookmark=[...bookmark,blog]
-     if(newbookmark){
-       
-      
-                 setBookmark(newbookmark)
-             }else{
-                toast("Wow so easy!")
-                setBookmark(newbookmark)
-             }
 
-   
-          }  
+    //  ---------------------toast section--------------------------------
+
+        const addededBookmark =bookmark.find(sBlog =>sBlog.id === blog.id);
+
+        if(addededBookmark){
+       
+            toast("Wow so easy!")
+            setBookmark(newbookmark)
+         
+        }else{
+       
+           setBookmark(newbookmark)
+       
+        }
+      
+
+    
+    }
+ 
+    
     
 
     useEffect(()=>{

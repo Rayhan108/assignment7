@@ -24,7 +24,7 @@ const BookmarkCard = ({spentTime,bookmark}) => {
         
            
               {
-                bookmark.map(bmark=><BookmarkTitle bmark={bmark} key={bmark.id}></BookmarkTitle>)
+                bookmark.map((bmark,index)=><BookmarkTitle bmark={bmark} key={index}></BookmarkTitle>)
               }
               
             </div>
